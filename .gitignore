@@ -32,3 +32,6 @@ build/
 .vscode/
 db
 openldap_data
+okta-ldap-agent/conf/OktaLDAPAgent.conf
+terraform.tfstate*
+.terraform*
