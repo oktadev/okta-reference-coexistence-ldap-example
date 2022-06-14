@@ -36,7 +36,7 @@
         <p>Visit the <a th:href="@{/profile}">My Profile</a> page in this application to view your user information.</p>
       </div>
 
-        <form method="get" th:action="@{/login}" th:unless="${#authorization.expression('isAuthenticated()')}">
+        <form method="get" th:action="@{/oauth2/authorization/okta}" th:unless="${#authorization.expression('isAuthenticated()')}">
           <button id="login-button" class="btn btn-primary" type="submit">Login</button>
         </form>
     </div>
